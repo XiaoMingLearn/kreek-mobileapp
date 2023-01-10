@@ -10,7 +10,7 @@ import {ThemeProvider} from './theme/ThemeProvider.js'
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {lightColor, darkColor, lightTheme, darkTheme} from './theme/colors.js';
 import {useColorScheme} from 'react-native'
-  
+
 import HomeScreen from "./screens/HomeScreen.js";
 import UserScreen from "./screens/UserScreen.js";
 import SettingScreen from "./screens/SettingScreen.js";
@@ -54,7 +54,7 @@ export default function App() {
     setIsPanelActive(false);
   };
 
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   const animationConfig = {
     animation: 'spring',
@@ -118,7 +118,7 @@ export default function App() {
       },
       headerTintColor: "#FFF",
     }}>
-        <Stack.Screen name="Home" component={HomeScreen} 
+        <Stack.Screen name="Home" component={HomeScreen}
         options={(props) => ({
           headerTitle: null,
           headerLeft: () => (
@@ -126,14 +126,16 @@ export default function App() {
             <Image
              style={{width: 100, height: 30 , marginLeft:10, fill:'#fff'}}
              //source={{uri:"https://source.unsplash.com/user/c_v_r/100x100"}}
-             source={isDark ? require('./assets/kreek_yellow.png') : require('./assets/kreek.png')}
+             source={isDark ? require('./assets/kreek_bright_green.png') : require('./assets/kreek_green.png')}
             />
             {/* <Logo width={50} fill={isDark? 'white': 'black'}/> */}
 
             </View>
             ),
             headerRight: () => (
-                <Switch value = {isDark} onValueChange = {val => setIsDark(val)} />
+                <Switch value = {isDark} onValueChange = {val => setIsDark(val)}
+                        // color = {isDark ? darkColor.text : lightColor.text}
+                />
                 // <Item
                 // title="Setting"
                 // iconName="reorder-three-sharp"

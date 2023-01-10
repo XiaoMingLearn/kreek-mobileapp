@@ -77,8 +77,10 @@ const NFT1Screen = () => {
 
 return (
 	<LinearGradient
-	colors={['#80808050','#1A111050', '#454545']}
-	start={{x: 0, y: 0.5}}
+	// colors={['#80808050','#1A111050', '#454545']}
+		colors={['#2DDFF515','#11437815', '#17E19327']}
+
+		start={{x: 0, y: 0.5}}
 	end={{x: 1, y: 1}}
 	style={{height:'100%'}}
   >
@@ -185,7 +187,7 @@ const styles = StyleSheet.create({
 		flex:1,
 		marginHorizontal:20,
 		marginVertical: 5,
-	}, 
+	},
 	right: {
 		flex:1,
 		textAlign:'right',

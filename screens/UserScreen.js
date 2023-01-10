@@ -10,8 +10,10 @@ const UserScreen = () => {
 
   return (
     <LinearGradient
-	colors={['#80808050','#1A111050', '#454545']}
-	start={{x: 0, y: 0.5}}
+	// colors={['#80808050','#1A111050', '#454545']}
+        colors={['#2DDFF515','#11437815', '#17E19327']}
+
+        start={{x: 0, y: 0.5}}
 	end={{x: 1, y: 1}}
 	style={{height:'100%'}}
   >
@@ -27,7 +29,7 @@ const UserScreen = () => {
             <View style={styles.userTopRight}>
                 <Text style={[styles.title, {color:colors.text}]}>Ape@NFT</Text>
                 <Text style={[styles.title, {color:colors.text}]}>Level 6    My Kreek Token: 50</Text>
-                <ProgressBar bgcolor = '#F2AF2A' completed = {60} /> 
+                <ProgressBar bgcolor = '#2EBB96FF' completed = {60} />
             </View>
         </View>
 
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
         fontSize: 16
     },
     subContainerList: {
-        backgroundColor: '#D9D9D940',
+        backgroundColor: '#77777780',
         borderRadius: 8,
     },
     subContainerListItem: {

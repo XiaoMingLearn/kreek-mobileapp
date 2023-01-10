@@ -16,12 +16,12 @@ import { Audio } from 'expo-av';
 
 const PAGE_WIDTH = window.width;
 let dotColors = [
-    '#26292E',
-    '#899F9C',
-    '#B3C680',
     '#5C6265',
-    '#F5D399',
-    '#F1F1F1',
+    '#5C6265',
+    '#5C6265',
+    '#5C6265',
+    '#5C6265',
+    '#5C6265',
 ];
 
 function CarouselParallax(props) {
@@ -54,11 +54,11 @@ function CarouselParallax(props) {
                 const { sound } = await Audio.Sound.createAsync( require('../assets/card_flip.mp3')
                 );
                 setSound(sound);
-    
+
                 await sound.playAsync();
             }
           }
-        
+
           React.useEffect(() => {
             return sound
               ? () => {
@@ -111,7 +111,7 @@ function CarouselParallax(props) {
                 </View>
             )}
             {/* <Text style={{color:colors.text, fontSize:18}}>{currIdx + 1} / {itemList.length} </Text> */}
-            
+
             <Carousel
                 {...baseOptions}
                 style={styles.carousel}
@@ -213,24 +213,24 @@ const InfoBlock = (props) => {
 
     return (
         <Animated.View style={[infoStyles.stat, {opacity:animValue}]}>
-            {days && 
-                <View style={infoStyles.row}> 
+            {days &&
+                <View style={infoStyles.row}>
                     <MaterialIcons style={infoStyles.icon} name="date-range" size={30} color={colors.text} />
-                    <Text style={{color: colors.text, fontSize:15}}>Days Holding: </Text>   
+                    <Text style={{color: colors.text, fontSize:15}}>Days Holding: </Text>
                     <Text style={{color: colors.text, fontSize:15}}>{days}</Text>
                 </View>
             }
             {totalToken &&
                 <View style={infoStyles.row}>
                     <FontAwesome style={infoStyles.icon} name="money" size={30} color={colors.text} />
-                    <Text style={{color: colors.text, fontSize:15}}>Token: </Text>   
+                    <Text style={{color: colors.text, fontSize:15}}>Token: </Text>
                     <Text style={{color: colors.text, fontSize:15}}> {totalToken} Drip Tokens (+ {tokenSpeed}/day)</Text>
                 </View>
             }
             {numUsers &&
                 <View style={infoStyles.row}>
                     <FontAwesome style={infoStyles.icon} name="users" size={30} color={colors.text} />
-                    <Text style={{color: colors.text, fontSize:15}}>Pool: </Text>   
+                    <Text style={{color: colors.text, fontSize:15}}>Pool: </Text>
                     <Text style={{color: colors.text, fontSize:15}}> {numUsers} are holding</Text>
                 </View>
             }
@@ -253,9 +253,9 @@ const styles = StyleSheet.create({
     card_container : {
         flex: 1,
         justifyContent: 'center',
-    }, 
+    },
     card_cover: {
-        flex: 1,  
+        flex: 1,
         backgroundColor: '#E6E6E630',
         alignItems:'center',
         justifyContent: 'center',
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
             {rotateY: '-15deg'},
             {rotateZ: '0deg'}
         ]
-    },  
+    },
     card: {
         flex: 1,
         height: 300,

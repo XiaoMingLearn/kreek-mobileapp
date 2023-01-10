@@ -28,12 +28,13 @@ const styles = StyleSheet.create({
     filler: {
         height: '100%',
         textAlign: 'right',
-        borderRadius: 50
+        borderRadius: 50,
     },
     label: {
         color: 'white',
         fontWeight: 'bold',
         marginHorizontal: 10,
+
     }
 
   });

@@ -37,11 +37,11 @@ const NFT2Screen = () => {
 				</View>
 
 				<Text style = {[styles.paragraph, {color:colors.text}]}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Maecenas ornare lacus sit amet est finibus, ut eleifend tellus ultrices. 
-				Praesent pretium gravida sapien, vel lobortis enim lacinia eu. 
-				Duis sodales ex at leo semper, euismod commodo tellus feugiat. 
-				Maecenas luctus mattis egestas. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Maecenas ornare lacus sit amet est finibus, ut eleifend tellus ultrices.
+				Praesent pretium gravida sapien, vel lobortis enim lacinia eu.
+				Duis sodales ex at leo semper, euismod commodo tellus feugiat.
+				Maecenas luctus mattis egestas.
 				</Text>
 			</Animated.View>
 		)
@@ -64,11 +64,11 @@ const NFT2Screen = () => {
 				</View>
 
 				<Text style = {[styles.paragraph, {color:colors.text}]}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Maecenas ornare lacus sit amet est finibus, ut eleifend tellus ultrices. 
-				Praesent pretium gravida sapien, vel lobortis enim lacinia eu. 
-				Duis sodales ex at leo semper, euismod commodo tellus feugiat. 
-				Maecenas luctus mattis egestas. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Maecenas ornare lacus sit amet est finibus, ut eleifend tellus ultrices.
+				Praesent pretium gravida sapien, vel lobortis enim lacinia eu.
+				Duis sodales ex at leo semper, euismod commodo tellus feugiat.
+				Maecenas luctus mattis egestas.
 				</Text>
 			</Animated.View>
 		)
@@ -91,11 +91,11 @@ const NFT2Screen = () => {
 				</View>
 
 				<Text style = {[styles.paragraph, {color:colors.text}]}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-				Maecenas ornare lacus sit amet est finibus, ut eleifend tellus ultrices. 
-				Praesent pretium gravida sapien, vel lobortis enim lacinia eu. 
-				Duis sodales ex at leo semper, euismod commodo tellus feugiat. 
-				Maecenas luctus mattis egestas. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Maecenas ornare lacus sit amet est finibus, ut eleifend tellus ultrices.
+				Praesent pretium gravida sapien, vel lobortis enim lacinia eu.
+				Duis sodales ex at leo semper, euismod commodo tellus feugiat.
+				Maecenas luctus mattis egestas.
 				</Text>
 			</Animated.View>
 		)
@@ -106,8 +106,10 @@ const NFT2Screen = () => {
 
 return (
 	<LinearGradient
-	colors={['#80808050','#1A111050', '#454545']}
-	start={{x: 0, y: 0.5}}
+	// colors={['#80808050','#1A111050', '#454545']}
+		colors={['#2DDFF515','#11437815', '#17E19327']}
+
+		start={{x: 0, y: 0.5}}
 	end={{x: 1, y: 1}}
 	style={{height:'100%'}}
   >
@@ -117,7 +119,7 @@ return (
 		<View style={{height:20}} />
 		<TouchableOpacity containerStyle={styles.backButton} onPress={() => navigation.goBack()}>
 			<Ionicons name="chevron-back-outline" style={{color:colors.text}} size={40}/>
-		</TouchableOpacity>       
+		</TouchableOpacity>
 		<NFTCardCover>
 			<Image
 			style={styles.poster}
@@ -148,7 +150,7 @@ return (
 		{section == 2 && <Section2 />}
 		{section == 3 && <Section3 />}
 
-        
+
         <View style={{flex:3}} />
     </View>
 
@@ -213,7 +215,7 @@ const styles = StyleSheet.create({
 		flex:1,
 		marginHorizontal:20,
 		marginVertical: 5,
-	}, 
+	},
 	right: {
 		flex:1,
 		textAlign:'right',

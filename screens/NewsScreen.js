@@ -30,8 +30,10 @@ const NewsScreen = (props) => {
 
     return (
     <LinearGradient
-    colors={['#80808050','#1A111050', '#454545']}
-    start={{x: 0, y: 0.5}}
+    // colors={['rgba(252,248,248,0.31)','rgba(208,188,188,0.31)', '#efc2c2']}
+        colors={['#2DDFF515','#11437815', '#17E19327']}
+
+        start={{x: 0, y: 0.5}}
     end={{x: 1, y: 1}}
     style={styles.container}>
         <View style={{flex:1}} />
@@ -44,11 +46,11 @@ const NewsScreen = (props) => {
 
         <View style={{flex:1}} />
         <LinearGradient
-        colors={['#c0392b', '#f1c40f', '#8e44ad']}
-        start={{x: 0, y: 0.5}}
-        end={{x: 1, y: 1}}
-        style={styles.button}
-      >
+            colors={['#2EBB96FF', '#2EBB96FF', '#2EBB96FF']}
+            start={{x: 0, y: 0.5}}
+            end={{x: 1, y: 1}}
+            style={styles.button}
+        >
         <TouchableOpacity>
             <Text style={styles.buttonText}>READ</Text>
         </TouchableOpacity>
@@ -95,22 +97,25 @@ const styles = StyleSheet.create({
   userLine: {
     flex:1,
   },
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    borderRadius: 20,
-    elevation: 3,
-    //backgroundColor:'#FF6F00',
-    width: 280,
-    height: 50
-  },
-  buttonText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    letterSpacing: 0.25,
-    color: 'white',
-  },
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        borderRadius: 20,
+        elevation: 3,
+        //backgroundColor:'#FF6F00',
+        width: 280,
+        height: 50,
+        shadowOffset:{width:3,height:5},
+        shadowOpacity: 0.4,
+        shadowRadius: 1.5,
+    },
+    buttonText: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'white',
+    },
 });
 
 const sampleUser1 = [require('../assets/user1.png'), require('../assets/user2.png'), require('../assets/user3.png'), require('../assets/user4.png')]
